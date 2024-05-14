@@ -1,0 +1,364 @@
+:root {
+	--cor-clara: #FAD8C6;
+	--cor-destaque: #FA7373;
+	--cor-media: #FACD73;
+	--cor-escura: #19161D;
+	--cor-offwithe: #F3F2EF;
+
+	--fonte-padrao: "Roboto", sans-serif;
+	--fonte-titulo: "Poetsen One", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100vw;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+body {
+	width: 100%;
+	background-color: var(--cor-clara);
+}
+
+.secao {
+	min-height: 100vh;
+margin-top: 220px;
+}
+
+/* Cabeca */
+
+.cabeca {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cabecaBarra {
+	width: 100%;
+	height: 120px;
+	padding: 0 10%;
+	background-color: var(--cor-media);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	margin-left: -15px;
+	z-index: 3;
+}
+
+.cabecaLogo {
+	width: 100px;
+	height: 100px;
+}
+
+.cabecaLogo:hover {
+	scale: 1.2;
+	cursor: grab;
+}
+
+.cabecaMenuLista {
+	list-style-type: none;
+	display: flex;
+	gap: 8%;
+	justify-content: space-around;
+}
+
+.cabecaMenuLinks a {
+	text-decoration: none;
+	color: var(--cor-escura);
+	font-family: var(--fonte-padrao);
+	font-weight: 600;
+	font-size: 20px
+}
+
+.cabecaMenuLinks a:hover {
+	cursor: pointer;
+	color: var(--cor-destaque);
+	text-decoration: underline;
+	scale: 1.2;
+}
+
+.cabecaAjuste {
+	width: 80%;
+	margin-top: 220px;
+	padding-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cabecaTitulo {
+	font-family: var(--fonte-titulo);
+	font-size: 32px;
+	color: var(--cor-escura);
+}
+
+.cabecaLogoChamada {
+	width: 500px;
+	height: auto;
+}
+
+.cabecaTexto {
+	width: 80%;
+	font-family: var(--fonte-padrao);
+	font-weight: 500;
+	font-size: 24px;
+	text-align: center;
+}
+
+.cabecaTextoDestaque {
+	color: #FA7373;
+}
+
+/* Sobre Nós */
+
+.sobreNos {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.sobreNosConteudo {
+	width: 100%;
+	padding: 0 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sobreNosTitulo {
+	font-family: var(--fonte-titulo);
+	font-size: 32px;
+	margin-bottom: 50px;
+}
+
+.sobreNosTexto {
+	font-family: var(--fonte-padrao);
+	color: var(--cor-escura);
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.sobreNosTextoDestaque {
+	color: var(--cor-destaque);
+	font-weight: 600;
+}
+
+.sobreNosPilar {
+	color: var(--cor-destaque);
+	font-family: var(--fonte-padrao);
+	font-size: 32px;
+	margin: 50px 0;
+
+}
+
+.sobreNosLista {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+
+.sobreNosLista dd {
+	width: 80%;
+	font-family: var(--fonte-padrao);
+	font-size: 20px;
+	color: var(--cor-escura);
+	margin: 20px 0;
+}
+
+/* Equipe */
+
+.equipe {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 150px;
+}
+
+.equipeConteudo {
+	width: 100%;
+	padding: 0 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.equipeTitulo {
+	font-family: var(--fonte-titulo);
+	font-size: 32px;
+}
+
+.equipeCards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	gap: 50px;
+	margin-top: 150px;
+}
+
+.equipeCard {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+
+.cardFoto {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	padding: 10px;
+	border: solid 3px var(--cor-destaque);
+	border-radius: 100px;
+	z-index: 2;
+}
+
+.cardTextos {
+	width: 400px;
+	height: 575px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 100px 20px 40px 20px;
+	border: solid 3px var(--cor-destaque);
+	border-radius: 20px;
+	margin-top: -100px;
+	position: relative;
+	z-index: 1;
+}
+
+.cardLink {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.cardNome {
+	font-family: var(--fonte-titulo);
+	font-size: 20px;
+	color: var(--cor-escura);
+}
+
+.cardTexto {
+	max-height: 360px;
+	height: 360px;
+	font-family: var(--fonte-padrao);
+	font-size: 16px;
+	color: var(--cor-escura);
+	font-weight: 500;
+	line-height: 24px;
+}
+
+
+.linkedin {
+	width: 64px;
+	height: auto;
+	position: absolute;
+}
+
+.linkedin:hover {
+	cursor: pointer;
+	scale: 1.2;
+}
+
+/* contatos */
+
+.contatos {
+	width: 100%;
+	height: 50vh;
+}
+
+.contatinos {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contatosTitulo {
+	text-align: center;
+	margin-bottom: 50px;
+	font-family: var(--fonte-titulo);
+	font-size: 32px;
+	color: var(--cor-destaque);
+}
+
+.contatosTexto {
+	font-family: var(--fonte-padrao);
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 50px;
+}
+
+.formTitulo {
+	font-family: var(--fonte-titulo);
+	font-size: 20px;
+	color: var(--cor-escura);
+	padding-top: 20px;
+}
+
+.formInput {
+	padding: 10px;
+	border: solid 3px var(--cor-destaque);
+	border-radius: 40px;
+	width: 350px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	background-color: var(--cor-offwithe);
+}
+
+.formMensagem {
+	min-width: 350px;
+	width: 350px;
+	min-height: 250px;
+	height: 250px;
+	padding: 10px;
+	border: solid 3px var(--cor-destaque);
+	border-radius: 40px;
+	background-color: var(--cor-offwithe);
+	font-size: 16px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.botao {
+	padding: 5px 15px;
+	border: solid 2px var(--cor-destaque);
+	background-color: var(--cor-offwithe);
+	border-radius: 20px;
+	margin: 20px 30px 0 20px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.botao:hover {
+	scale: 1.2;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+/* Rodapé */
+
+.rodape {
+
+	width: 100%;
+	height: 30px;
+	bottom: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--cor-media);
+}
+
+.rodape p {
+	font-family: var(--fonte-padrao);
+	font-weight: 500;
+	color: var(--cor-escura);
+}
